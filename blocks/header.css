@@ -1,0 +1,10 @@
+.header {
+  border-bottom: solid 1px #545454;
+  padding: 2%;
+}
+
+.header__image {
+  width: 173px;
+  height: 33px;
+  padding: 0%;
+}

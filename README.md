@@ -2,17 +2,37 @@
 
 ### Overview
 
-- Intro
-- Figma
-- Images
+This project is part of the TripleTen Frontend Developer program.  
+It focuses on _adaptive web design_ and applying the _BEM methodology_ to structure CSS.  
+The goal is to ensure that all elements display correctly on popular screen sizes using responsive techniques like _Flexbox_, _Grid_, and _media queries_.
 
-**Intro**
+### Features
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+- Built with semantic HTML5
+- Flat BEM file structure for styles
+- Responsive layout for mobile, tablet, and desktop
+- Images optimized and exported from Figma
 
-**Figma**
+### Technologies
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+- HTML
+- CSS
+- Flexbox
+- Grid
+- BEM methodology
+- Media queries
+
+### Figma
+
+https://www.figma.com/design/Es8zZP3ARGH9JGcw60i3OD/Sprint-3_-Around-the-US?node-id=6432-147&t=03usfCluMBXD7WMj-0
+
+### GitHub Pages
+
+https://github.com/Plozillest/se_project_aroundtheus
+
+### Video Overview
+
+https://drive.google.com/file/d/1-SU0cg6EYNpsFdYiqD56YibFH3QMucR1/view?usp=drive_link
 
 **Images**
 
