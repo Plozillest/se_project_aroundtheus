@@ -28,7 +28,7 @@ https://www.figma.com/design/Es8zZP3ARGH9JGcw60i3OD/Sprint-3_-Around-the-US?node
 
 ### GitHub Pages
 
-https://github.com/Plozillest/se_project_aroundtheus
+https://plozillest.github.io/se_project_aroundtheus/
 
 ### Video Overview
 
