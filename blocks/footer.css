@@ -1,6 +1,4 @@
 .footer__text {
-  width: 318px;
-  height: 18px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -14,4 +12,12 @@
 
 .footer {
   position: sticky;
+}
+
+@media screen and (max-width: 680px) {
+  .footer__text {
+    padding-left: 19px;
+    width: 282px;
+    height: 14px;
+  }
 }

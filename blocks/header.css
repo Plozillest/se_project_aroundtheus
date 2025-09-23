@@ -8,3 +8,15 @@
   height: 33px;
   padding: 0%;
 }
+
+@media screen and (max-width: 680px) {
+  .header {
+    padding: 0;
+  }
+
+  .header__image {
+    width: 126px;
+    height: 24px;
+    padding: 2%;
+  }
+}
