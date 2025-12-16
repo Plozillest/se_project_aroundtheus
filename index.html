@@ -123,6 +123,40 @@
       </main>
     </div>
 
+    <div class="modal">
+      <div class="modal__container">
+        <button class="modal__button-close" type="button"></button>
+        <form class="modal__form" name="edit-profile-form" novalidate>
+          <h2 class="modal__title">Edit Profile</h2>
+          <input
+            class="modal__input"
+            type="text"
+            name="name"
+            id="name-input"
+            placeholder="Name"
+            minlength="2"
+            maxlength="40"
+            required
+          />
+          <span class="modal__input-error" id="name-input-error"></span>
+          <input
+            class="modal__input"
+            type="text"
+            name="About me"
+            id="description-input"
+            placeholder="About me"
+            minlength="2"
+            maxlength="200"
+            required
+          />
+          <span class="modal__input-error" id="description-input-error"></span>
+          <button class="modal__save-button" type="submit">Save</button>
+      
+      
+      
+        </div >
+    </div>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>
