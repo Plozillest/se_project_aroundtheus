@@ -7,7 +7,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -22,6 +22,10 @@
   border-radius: 10px;
   margin: auto;
   border: 1px solid #0000;
+}
+
+.modal_opened {
+  display: flex;
 }
 
 .modal__content {

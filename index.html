@@ -34,7 +34,7 @@
           <div class="profile__info">
             <div class="profile__name profile__name_edit">
               <h1 class="profile__title">Jacques Cousteau</h1>
-              <button class="profile__edit-button" type="button"></button>
+              <button class="profile__edit-button" id="profile-edit-button"  type="button"></button>
             </div>
             <p class="profile__description">Explorer</p>
           </div>
@@ -123,9 +123,9 @@
       </main>
     </div>
 
-    <div class="modal">
+    <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__button-close" type="button"></button>
+        <button class="modal__button-close" id="modal-close-button"  type="button"></button>
         <form class="modal__form" name="edit-profile-form" novalidate>
           <h2 class="modal__title">Edit Profile</h2>
           <input
