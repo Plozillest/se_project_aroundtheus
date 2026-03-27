@@ -1,6 +1,9 @@
 .header {
-  border-bottom: solid 1px #545454;
-  padding: 2%;
+  min-height: 120px;
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .header__image {
@@ -11,7 +14,7 @@
 
 @media screen and (max-width: 680px) {
   .header {
-    padding: 0;
+    padding: 0%;
   }
 
   .header__image {
