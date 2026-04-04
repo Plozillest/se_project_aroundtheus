@@ -12,6 +12,8 @@
 
 .card__title {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__description {
@@ -24,7 +26,6 @@
   padding-right: 20px;
   align-items: center;
   justify-content: space-between;
-  text-overflow: ellipsis;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
