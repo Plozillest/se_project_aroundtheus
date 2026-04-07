@@ -136,6 +136,15 @@
     font-size: 18px;
   }
 
+  .modal__container {
+    position: relative;
+    display: flex;
+    width: 282px;
+    height: auto;
+    padding: 22px;
+    border-radius: 10px;
+  }
+
   .modal__input {
     font-size: 14px;
     margin: 0 0;
