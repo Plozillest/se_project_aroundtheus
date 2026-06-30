@@ -111,15 +111,20 @@ function getCardElement(cardData) {
   return cardElement;
 }
 
-profileEditButton.addEventListener("click", () => {
-  profileEditModal.classList.add("modal_opened");
-});
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+}
+
+profileEditButton.addEventListener("click", () => openModal(profileEditModal));
+
 profileTitleInput.value = profileTitle.textContent;
 profileDescriptionInput.value = profileDescription.textContent;
 
-modalCloseButton.addEventListener("click", () => {
-  closePopup();
-});
+modalCloseButton.addEventListener("click", () => closeModal(profileEditModal));
 
 profileEditForm.addEventListener("submit", (event) => {
   event.preventDefault();
