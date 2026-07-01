@@ -53,14 +53,6 @@ const cardImageInput = document.querySelector("#card-link-input");
 const modalCardCloseButton = document.querySelector("#modal-card-close-button");
 
 // functions add and close card modal
-function openAddCardModal() {
-  addCardForm.reset();
-  addCardModal.classList.add("modal_opened");
-}
-
-function closeAddCardModal() {
-  addCardModal.classList.remove("modal_opened");
-}
 
 function handleAddCardFormSubmit(event) {
   event.preventDefault();
@@ -72,18 +64,20 @@ function handleAddCardFormSubmit(event) {
 
   const cardElement = getCardElement(cardData);
   cardListElement.prepend(cardElement);
-  closeAddCardModal();
+  closeModal(addCardModal);
 }
 
-addCardButton.addEventListener("click", openAddCardModal);
-modalCardCloseButton.addEventListener("click", closeAddCardModal);
+addCardButton.addEventListener("click", () => {
+  addCardForm.reset();
+  openModal(addCardModal);
+});
+modalCardCloseButton.addEventListener("click", () => {
+  closeModal(addCardModal);
+});
 
 addCardForm.addEventListener("submit", handleAddCardFormSubmit);
 
 // functions edit and close profile modal
-function closePopup() {
-  profileEditModal.classList.remove("modal_opened");
-}
 
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
@@ -130,7 +124,7 @@ profileEditForm.addEventListener("submit", (event) => {
   event.preventDefault();
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-  closePopup();
+  closeModal(profileEditModal);
 });
 
 initialCards.forEach((cardData) => {
@@ -155,11 +149,9 @@ function openImagePreviewModal(cardData) {
   imagePreview.alt = cardData.name;
   imagePreviewTitle.textContent = cardData.name;
 
-  imagePreviewModal.classList.add("modal_opened");
+  openModal(imagePreviewModal);
 }
 
-function closeImagePreviewModal() {
-  imagePreviewModal.classList.remove("modal_opened");
-}
-
-modalImageCloseButton.addEventListener("click", closeImagePreviewModal);
+modalImageCloseButton.addEventListener("click", () => {
+  closeModal(imagePreviewModal);
+});
