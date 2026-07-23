@@ -76,6 +76,29 @@
   border-bottom: 2px solid #000;
 }
 
+.modal__input_type_error {
+  border-bottom: 1px solid red;
+}
+
+.modal__input-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+  line-height: 17px;
+  opacity: 0;
+}
+
+.modal__error_visible {
+  opacity: 1;
+}
+
+.modal__save-button_disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}
+
 .modal__save-button {
   margin-top: 48px;
   padding: 0;
