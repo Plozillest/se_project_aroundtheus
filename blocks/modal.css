@@ -26,6 +26,7 @@
   border-radius: 10px;
   margin: auto;
   border: 1px solid #0000;
+  width: 430px;
 }
 
 .modal_opened {
