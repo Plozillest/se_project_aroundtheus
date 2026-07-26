@@ -1,3 +1,15 @@
+function resetValidation(formElement, config) {
+  const inputList = Array.from(
+    formElement.querySelectorAll(config.inputSelector),
+  );
+  const buttonElement = formElement.querySelector(config.submitButtonSelector);
+
+  inputList.forEach((inputElement) => {
+    hideInputError(formElement, inputElement, config);
+  });
+  toggleButtonState(inputList, buttonElement, config);
+}
+
 const validationConfig = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
@@ -69,5 +81,3 @@ function enableValidation(config) {
     setEventListeners(formElement, config);
   });
 }
-
-resetValidation(addCardForm, validationConfig);

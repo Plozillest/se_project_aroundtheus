@@ -64,23 +64,13 @@ function handleAddCardFormSubmit(event) {
 
   const cardElement = getCardElement(cardData);
   cardListElement.prepend(cardElement);
+  addCardForm.reset();
+  resetValidation(addCardForm, validationConfig);
   closeModal(addCardModal);
 }
 
-function resetValidation(formElement, config) {
-  const inputList = Array.from(
-    formElement.querySelectorAll(config.inputSelector),
-  );
-  const buttonElement = formElement.querySelector(config.submitButtonSelector);
-
-  inputList.forEach((inputElement) => {
-    hideInputError(formElement, inputElement, config);
-  });
-  toggleButtonState(inputList, buttonElement, config);
-}
 addCardButton.addEventListener("click", () => {
   openModal(addCardModal);
-  resetValidation(addCardForm, validationConfig);
 });
 
 modalCardCloseButton.addEventListener("click", () => {
